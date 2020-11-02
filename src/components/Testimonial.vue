@@ -1,12 +1,12 @@
 <template>
   <v-container>
-    <v-row class="">
-      <v-col class="col-md-9">
+    <v-row>
+      <v-col class="col-12 col-md-9">
         <v-row>
           <v-col
               v-for="(item, idx) in testimonials"
               :key="idx"
-              :class="item.class"
+              :class="`col-12 ${item.class}`"
           >
             <v-card
               v-bind="item.attrs"
@@ -63,7 +63,6 @@
         </v-row>
       </v-col>
     </v-row>
-
   </v-container>
 </template>
 
